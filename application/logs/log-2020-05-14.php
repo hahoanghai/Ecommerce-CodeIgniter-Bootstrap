@@ -249,3 +249,19 @@ LINE 1: SELECT DATE_FORMAT(FROM_UNIXTIME(time), '%M %Y') as month, M...
 HINT:  No function matches the given name and argument types. You might need to add explicit type casts. - Invalid query: SELECT DATE_FORMAT(FROM_UNIXTIME(time), '%M %Y') as month, MAX(time) as maxtime, MIN(time) as mintime FROM blog_posts GROUP BY DATE_FORMAT(FROM_UNIXTIME(time), '%M %Y')
 ERROR - 2020-05-14 20:26:56 --> 404 Page Not Found: /index
 ERROR - 2020-05-14 20:26:57 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:29:06 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:29:06 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:29:43 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:29:44 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:11 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:12 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:26 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:27 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:35 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:36 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:42 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:43 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:33:46 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:34:04 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:34:05 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:34:47 --> 404 Page Not Found: /index
