@@ -6,12 +6,12 @@ if (!defined('BASEPATH')) {
 
 function mb_ucfirst($str, $encoding = "UTF-8", $lower_str_end = false)
 {
-    $first_letter = mb_strtoupper(mb_substr($str, 0, 1, $encoding), $encoding);
+    $first_letter = strtoupper(substr($str, 0, 1));
     $str_end = "";
     if ($lower_str_end) {
-        $str_end = mb_strtolower(mb_substr($str, 1, mb_strlen($str, $encoding), $encoding), $encoding);
+        $str_end = strtolower(substr($str, 1, strlen($str)));
     } else {
-        $str_end = mb_substr($str, 1, mb_strlen($str, $encoding), $encoding);
+        $str_end = substr($str, 1, strlen($str));
     }
     $str = $first_letter . $str_end;
     return $str;

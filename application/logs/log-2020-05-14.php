@@ -239,3 +239,13 @@ ERROR - 2020-05-14 20:07:39 --> 404 Page Not Found: /index
 ERROR - 2020-05-14 20:07:40 --> 404 Page Not Found: /index
 ERROR - 2020-05-14 20:18:11 --> 404 Page Not Found: /index
 ERROR - 2020-05-14 20:18:11 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:22:48 --> Severity: Warning --> pg_query(): Query failed: ERROR:  function from_unixtime(integer) does not exist
+LINE 1: SELECT DATE_FORMAT(FROM_UNIXTIME(time), '%M %Y') as month, M...
+                           ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts. C:\Users\michael\xampp\htdocs\codeigniter-e\system\database\drivers\postgre\postgre_driver.php 242
+ERROR - 2020-05-14 20:22:48 --> Query error: ERROR:  function from_unixtime(integer) does not exist
+LINE 1: SELECT DATE_FORMAT(FROM_UNIXTIME(time), '%M %Y') as month, M...
+                           ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts. - Invalid query: SELECT DATE_FORMAT(FROM_UNIXTIME(time), '%M %Y') as month, MAX(time) as maxtime, MIN(time) as mintime FROM blog_posts GROUP BY DATE_FORMAT(FROM_UNIXTIME(time), '%M %Y')
+ERROR - 2020-05-14 20:26:56 --> 404 Page Not Found: /index
+ERROR - 2020-05-14 20:26:57 --> 404 Page Not Found: /index
