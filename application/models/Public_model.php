@@ -229,7 +229,7 @@ class Public_model extends CI_Model
 
     public function getCountQuantities()
     {
-        $query = $this->db->query('SELECT SUM(IF(quantity<=0,1,0)) as out_of_stock, SUM(IF(quantity>0,1,0)) as in_stock FROM products WHERE visibility = 1');
+        $query = $this->db->query('SELECT SUM(CASE WHEN quantity<=0 THEN 1 ELSE 0 END) as out_of_stock, SUM(CASE WHEN quantity>0 THEN 1 ELSE 0 END) as in_stock FROM products WHERE visibility = 1');
         return $query->row_array();
     }
 
