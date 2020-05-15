@@ -53,7 +53,7 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', 'development');
+define('ENVIRONMENT', getenv('APP_ENV')?:"production");
 
 /*
  *---------------------------------------------------------------
@@ -65,8 +65,8 @@
  */
 switch (ENVIRONMENT)
 {
-	case 'development':
-		error_reporting(-1);
+	case 'local':
+		error_reporting(E_STRICT);
 		ini_set('display_errors', 1);
 	break;
 
